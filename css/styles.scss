@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  .top-image {
+    height: 400px;
+    background-image: url("../img/2010-hus-i-træ.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 35%;
+    background-size: cover;
+  }
+}

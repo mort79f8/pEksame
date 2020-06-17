@@ -1,9 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@300;400&display=swap");
+$nearBlack: #2a2a2a;
+$lightgreyish: #e1e1e1;
+$footerTextColor: #626262;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: lato;
+}
+
+h1,
+h2 {
+  font-family: "Nunito sans";
+}
+
+.triangle {
+  width: 50px;
 }
 header {
   .top-image {
@@ -12,5 +28,128 @@ header {
     background-repeat: no-repeat;
     background-position: 50% 35%;
     background-size: cover;
+  }
+  .logo {
+    font-family: "Nunito sans";
+    font-size: 1.5rem;
+    h1 {
+      margin-left: 20px;
+    }
+  }
+  nav {
+    height: 10vh;
+    background-color: #161616;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    ul {
+      width: 30%;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 15px;
+      margin-right: 20px;
+      li {
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+main {
+  #main-top {
+    margin: 40px 0px 0px 0px;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+
+  .text {
+    display: flex;
+    margin: 40px;
+    .left-text {
+      margin-right: 20px;
+    }
+  }
+  #main-middle {
+    background-color: $lightgreyish;
+    display: flex;
+    flex-direction: column;
+    .articles {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-evenly;
+      article {
+        width: 30%;
+        background-color: white;
+        height: 600px;
+        img {
+          width: 100%;
+          height: 370px;
+        }
+        p,
+        h2 {
+          margin: 10px;
+        }
+      }
+    }
+    .triangle {
+      align-self: center;
+    }
+  }
+  #main-bottom {
+    background-image: url(../img/5642_hejrelunden_20.jpg);
+    background-position: 0% 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .bg-catelog {
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        text-transform: uppercase;
+        color: white;
+        border: 2px solid white;
+        border-radius: 25px;
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+footer {
+  height: 400px;
+  // background-color: $nearBlack;
+  color: $footerTextColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    color: $footerTextColor;
+    text-decoration: none;
+  }
+
+  .link-products {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  .link-company {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+  .company-info {
+    width: 25%;
+  }
+  .social {
+    color: black;
   }
 }
